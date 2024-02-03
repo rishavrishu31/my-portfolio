@@ -2,10 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import bank from "../../Assets/Projects/bankmgmt.png";
-import img_cap from "../../Assets/Projects/img_cap.png";
-import splits from "../../Assets/Projects/splits.png";
-import chatter from "../../Assets/Projects/chatter.png";
+import ict from "../../Assets/Projects/ict.png";
+import marketplace from "../../Assets/Projects/marketplace.png";
+import weather_app from "../../Assets/Projects/weather_app.png";
 
 function Projects() {
   return (
@@ -21,7 +20,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatter}
+              imgPath={marketplace}
               isBlog={false}
               title="Blockchain Technology"
               description=" I have developed a decentralized application (DApp) that allows users to purchase courses available on a web page using blockchain technology. The application is integrated with Metamask, a popular cryptocurrency wallet and gateway to the Ethereum blockchain."
@@ -32,7 +31,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={splits}
+              imgPath={weather_app}
               isBlog={false}
               title="Weather App"
               description="A basic weather app created using JavaScript, HTML, and CSS is a user-friendly web application that provides real-time weather information for a specific location. Users can enter the name of a city in a search input field to retrieve current weather data, including temperature, humidity, wind speed, and weather conditions. The app dynamically updates the display based on the entered city, fetching data from a weather API and using JavaScript to manipulate the DOM."
@@ -43,7 +42,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={img_cap}
+              imgPath={ict}
               isBlog={false}
               title="Image captioning transformer"
               description="It is an image captioning model based on transformer architecture. Transformer architecture uses global attention. It allows parallelisation to improve attention."
